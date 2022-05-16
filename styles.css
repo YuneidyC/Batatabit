@@ -96,7 +96,7 @@ main {
     width: 100%;
     height: auto;
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
     text-align: center;
 }
 .main-exchange-container--title {
@@ -139,7 +139,7 @@ main {
 }
 .main-currency-table .currency-table--title,
 .main-commission-table .commission-table--title {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
@@ -147,7 +147,7 @@ main {
 }
 .main-commission-table .commission-table--title {
     color: var(--secondary-blue);
-    margin-top: 30px;
+    margin-top: 80px;
 }
 .currency-table--container,
 .commission-table--container {
@@ -156,6 +156,7 @@ main {
     max-width: 300px;
     height: 250px;
     margin: 0 auto;
+    border-radius: 15px;
 }
 .currency-table--container table,
 .commission-table--container table {
@@ -168,7 +169,7 @@ main {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
-    color: var(--grey);
+    color: var(--dark-grey);
     background-color: var(--just-white);
 }
 .currency-table--container .table__top-left,
@@ -192,7 +193,7 @@ main {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
-    color: var(--dark-grey);
+    color: var(--black);
 }
 .currency-table--container .down,
 .currency-table--container .up {
@@ -359,7 +360,6 @@ main {
 .main-plans-container {
     width: 100%;
     min-width: 320px;
-    /* padding-bottom: 70px; */
     text-align: center;
 }
 .plans--title {
@@ -449,10 +449,10 @@ main {
     color: var(--dark-grey);
     font-weight: 500;
 }
-.plan-card--ca, .semi-choose, .monthly-choose {
+.plan-card--ca {
     width: 150px;
     height: 48px;
-    margin-top: 20px;
+    margin-top: 36px;
     background-color: var(--off-white);
     border: 2px solid var(--bitcoin-orange);
     border-radius: 4px;
@@ -463,9 +463,11 @@ main {
     font-family: 'DM Sans', sans-serif;
 }
 .semi-choose {
+    margin-top: 20px;
     border: 2px solid var(--dark-grey);
 }
 .monthly-choose {
+    margin-top: 20px;
     border: 2px solid var(--secondary-blue);
 }
 .plan-card--ca span {
@@ -476,7 +478,6 @@ main {
     vertical-align: text-bottom;
     margin-left: 5px;
 }
-
 
 footer {
     display: flex;
