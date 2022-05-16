@@ -1,0 +1,22 @@
+.main-tables-container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+.main-currency-table .button-right {
+    background-image: none;
+}
+.main-commission-table .button-left {
+    background-image: none;
+}
+
+.product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.plans-container--slider {
+    justify-content: center;
+}
