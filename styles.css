@@ -261,30 +261,6 @@ main {
     color: var(--black);
 }
 
-.main-currency-table .button-right {
-    position: relative;
-    left: 180px;
-    top: 135px;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-    width: 8px;
-    height: 12px;
-    background-image: url('./assets/icons/right-arrow.svg');
-}
-
-.main-commission-table .button-left {
-    position: relative;
-    right: 180px;
-    top: 135px;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-    width: 8px;
-    height: 12px;
-    background-image: url('./assets/icons/left-arrow.svg');
-}
-
 .main-product-detail {
     position: relative;
     width: 100%;
