@@ -3,9 +3,11 @@
     width: 930px;
     margin: 0 auto;
 }
+
 .main-currency-table .button-right {
     background-image: none;
 }
+
 .main-commission-table .button-left {
     background-image: none;
 }
@@ -19,4 +21,5 @@
 
 .plans-container--slider {
     justify-content: center;
+    overflow-x: hidden;
 }
