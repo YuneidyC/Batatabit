@@ -382,6 +382,8 @@ main {
 }
 
 .bitcoin-img-container {
+    display: flex;
+    justify-content: center;
     width: 100%;
     min-width: 320px;
     height: 60vh;
@@ -389,6 +391,7 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .bitcoin-img-container h2 {
