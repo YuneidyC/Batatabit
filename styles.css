@@ -107,15 +107,7 @@ main {
     width: 100%;
     height: auto;
     padding-top: 80px;
-    padding-bottom: 120px;
-    text-align: center;
-}
-
-.main-exchange-container--title {
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .main-exchange-container .backgroundImg {
@@ -127,6 +119,14 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.main-exchange-container--title {
+    width: 90%;
+    margin: 0 auto;
+    min-width: 288px;
+    max-width: 900px;
+    text-align: center;
 }
 
 .main-exchange-container h2 {
@@ -145,18 +145,83 @@ main {
     color: var(--dark-grey);
 }
 
-.main-currency-table, .main-commission-table {
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    height: 310px;
-    margin: 0 auto;
+.main-tables-container {
+    display: block;
+    max-width: 930px;
+    place-content: center;
+}
+
+#cards {
+    position: relative;
+    width: 320px;
+    height: 400px;
     font-family: "Inter", sans-serif;
+    margin: 0 auto;
+
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+}
+
+#cards.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.main-table {
+    position: absolute;
+    width: 320px;
+    height: auto;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    place-self: center;
+}
+
+.main-currency-table, .main-commission-table {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.main-commission-table {
+    transform: rotateY(180deg);
+}
+
+.main-exchange-container .button-right, .button-left {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    left: 80%;
+    right: 0;
+    top: 100%;
+    margin: 0;
+    background-image: url('./assets/icons/right-arrow.svg');
+    background-repeat: no-repeat;
+    background-color: var(--off-white);
+    border: none;
+    cursor: pointer;
+}
+
+.main-exchange-container .button-left {
+    left: 18%;
+    background-image: url('./assets/icons/left-arrow.svg');
+}
+
+.button-right.is-inactive {
+    opacity: 0.2;
+    cursor: default;
+}
+
+.button-left.is-inactive {
+    opacity: 0.2;
+    cursor: default;
 }
 
 .main-currency-table .currency-table--title,
 .main-commission-table .commission-table--title {
     margin-bottom: 15px;
+    margin-top: 25px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
@@ -165,7 +230,6 @@ main {
 
 .main-commission-table .commission-table--title {
     color: var(--secondary-blue);
-    margin-top: 80px;
 }
 
 .currency-table--container,

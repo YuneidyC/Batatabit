@@ -1,19 +1,28 @@
 .main-tables-container {
-    display: flex;
     width: 930px;
     margin: 0 auto;
 }
 
-.main-currency-table .button-right {
+#cards.is-flipped {
+    transform: rotateY(0deg);
+    transition: none;
+}
+
+.main-tables-container .main-currency-table, .main-commission-table {
+    right: 50%;
+}
+
+.main-commission-table {
+    transform: rotateY(0deg);
+    left: 50%;
+}
+
+.main-exchange-container .button-right, .button-left {
     background-image: none;
 }
 
-.main-commission-table .button-left {
+.main-exchange-container .button-left {
     background-image: none;
-}
-
-.main-commission-table .commission-table--title {
-    margin-top: 0;
 }
 
 .product-cards--container {
