@@ -35,9 +35,14 @@
                     <p>We bring information in real time of the most important exchange houses and currencies.</p>
                 </div>
                 <section class="main-tables-container">
-                    <button type="button" class="button-right" id="rightArrow" onclick="showTable(this.id)"></button>
-                    <button type="button" class="button-left is-inactive" id="leftArrow" onclick="showTable(this.id)"
-                        disabled></button>
+                    <div class="button-right-container">
+                        <button type="button" class="button-right" id="rightArrow"
+                            onclick="showTable(this.id)"></button>
+                    </div>
+                    <div class="button-left-container is-inactive">
+                        <button type="button" class="button-left" id="leftArrow"
+                            onclick="showTable(this.id)" disabled></button>
+                    </div>
                     <div id="cards">
                         <div class="main-table main-currency-table">
                             <p class="currency-table--title">Coins</p>

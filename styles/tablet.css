@@ -17,11 +17,7 @@
     left: 50%;
 }
 
-.main-exchange-container .button-right, .button-left {
-    background-image: none;
-}
-
-.main-exchange-container .button-left {
+.main-exchange-container .button-right, .main-exchange-container .button-left {
     background-image: none;
 }
 

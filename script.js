@@ -15,9 +15,9 @@ function showTable(id) {
 
 function switchState(arrowObject, bActivate) {
     if (bActivate) {
-        arrowObject.classList.remove('is-inactive');
+        arrowObject.parentNode.classList.remove('is-inactive');
     } else {
-        arrowObject.classList.add('is-inactive');
+        arrowObject.parentNode.classList.add('is-inactive');
     }
     arrowObject.disabled = !bActivate;
 }

@@ -101,11 +101,11 @@ main {
     width: 100%;
     height: auto;
     background-color: var(--off-white);
+    min-width: 320px;
 }
 
 .main-exchange-container {
-    width: 100%;
-    height: auto;
+    position: relative;
     padding-top: 80px;
     padding-bottom: 50px;
 }
@@ -146,17 +146,22 @@ main {
 }
 
 .main-tables-container {
-    display: block;
+    display: grid;
+    grid-template-columns: minmax(45px, 75px) minmax(230px, 250px) minmax(45px, 75px);
     max-width: 930px;
-    place-content: center;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 #cards {
-    position: relative;
-    width: 320px;
+    grid-column: 2 / 3;
+    min-width: 230px;
+    max-width: 250px;
+    min-height: 150px;
     height: 400px;
+    margin: 15px auto;
+    padding-top: 13px;
     font-family: "Inter", sans-serif;
-    margin: 0 auto;
 
     transition: transform 0.3s;
     transform-style: preserve-3d;
@@ -168,14 +173,13 @@ main {
 
 .main-table {
     position: absolute;
-    width: 320px;
     height: auto;
     line-height: 260px;
     color: white;
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    place-self: center;
+    place-items: center;
 }
 
 .main-currency-table, .main-commission-table {
@@ -187,15 +191,35 @@ main {
     transform: rotateY(180deg);
 }
 
-.main-exchange-container .button-right, .button-left {
-    display: inline-block;
-    position: absolute;
-    width: 10px;
+.main-tables-container .button-right-container, 
+.button-left-container {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-content: start;
+    align-self: center;
+}
+
+.main-tables-container .button-left-container {
+    justify-self: end;
+    grid-column: 1 / 2;
+}
+
+.main-tables-container .button-right-container.is-inactive {
+    opacity: 0.2;
+    cursor: default;
+}
+    
+.main-tables-container .button-left-container.is-inactive {
+    opacity: 0.2;
+    cursor: default;
+}
+
+.button-right-container .button-right, 
+.button-left-container .button-left {
+    width: 8px;
     height: 15px;
-    left: 80%;
-    right: 0;
-    top: 100%;
-    margin: 0;
+    margin: 0 15px;
+    
     background-image: url('./assets/icons/right-arrow.svg');
     background-repeat: no-repeat;
     background-color: var(--off-white);
@@ -203,19 +227,8 @@ main {
     cursor: pointer;
 }
 
-.main-exchange-container .button-left {
-    left: 18%;
+.button-left-container .button-left {
     background-image: url('./assets/icons/left-arrow.svg');
-}
-
-.button-right.is-inactive {
-    opacity: 0.2;
-    cursor: default;
-}
-
-.button-left.is-inactive {
-    opacity: 0.2;
-    cursor: default;
 }
 
 .main-currency-table .currency-table--title,
