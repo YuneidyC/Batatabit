@@ -10,11 +10,13 @@
 
 .main-tables-container .main-currency-table, .main-commission-table {
     right: 50%;
+    margin: 0 50px;
 }
 
-.main-commission-table {
+.main-tables-container .main-commission-table {
     transform: rotateY(0deg);
     left: 50%;
+    width: 230px;
 }
 
 .main-exchange-container .button-right, .main-exchange-container .button-left {
