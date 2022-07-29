@@ -31,6 +31,28 @@
 }
 
 .plans-container--slider {
-    justify-content: center;
+    display: inline-block;
     overflow-x: hidden;
+}
+
+.plans-container--card {
+    position: relative;
+    display: inline-block;
+    scroll-snap-align: center;
+    margin: 50px 5px 0;
+    transition: none;
+}
+
+#radio-1:checked~.plans #plans-1,
+#radio-2:checked~.plans #plans-2,
+#radio-3:checked~.plans #plans-3,
+#radio-1:checked~.plans #plans-2,
+#radio-2:checked~.plans #plans-3,
+#radio-3:checked~.plans #plans-1,
+#radio-1:checked~.plans #plans-3,
+#radio-2:checked~.plans #plans-1,
+#radio-3:checked~.plans #plans-2   {
+    transform: none;
+    opacity: 1;
+    z-index: 1;
 }
