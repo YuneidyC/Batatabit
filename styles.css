@@ -634,6 +634,15 @@ input[type="radio"] {
     background-image: url('./assets/icons/orange-right-arrow.svg');
     vertical-align: text-bottom;
     margin-left: 5px;
+    background-color: var(--off-white);
+}
+
+.plan-card--ca.semi-choose span {
+    background-image: url('./assets/icons/grey-right-arrow.svg');
+}
+
+.plan-card--ca.monthly-choose span {
+    background-image: url('./assets/icons/blue-right-arrow.svg');
 }
 
 .plans-container--card button {
