@@ -15,4 +15,4 @@ I have made two main improvements for widths of 936px and below:
 
 # Test it out
 
-You can test this [**here**](https://yuneidyc.github.io/MobileFirst/).
+You can test this [**here**](https://yuneidyc.github.io/Batatabit/).
