@@ -1,4 +1,4 @@
-# MobileFirst
+# Batatabit
 
 This project was developed during the course [**Responsive Design: Mobile First Layout**](https://platzi.com/cursos/mobile-first/).
 
