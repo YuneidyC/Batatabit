@@ -21,6 +21,10 @@ I have made two main improvements for widths of 936px and below:
   </a>
 </p>
 
+# Lighthouse
+
+<img src="lighthouse_results/desktop/pagespeed.svg" alt="Lighthouse report" width="800" />
+
 # Test it out
 
 You can test this [**here**](https://yuneidyc.github.io/Batatabit/).
