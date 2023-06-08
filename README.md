@@ -7,7 +7,7 @@ I have made two main improvements for widths of 936px and below:
 - Currency and Commission tables are layed out back to back and can be flipped.
 - Product cards are put into a carousel.
 
-# Tech stack
+## Tech stack
 
 <p>
   <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" >
@@ -21,10 +21,10 @@ I have made two main improvements for widths of 936px and below:
   </a>
 </p>
 
-# Lighthouse
+## Lighthouse
 
 <img src="lighthouse_results/desktop/pagespeed.svg" alt="Lighthouse report" width="800" />
 
-# Test it out
+## Test it out
 
 You can test this [**here**](https://yuneidyc.github.io/Batatabit/).
